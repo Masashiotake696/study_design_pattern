@@ -1,14 +1,17 @@
 <?php
+require_once('./Hart.php');
 
 class Person {
     private $name;
     private $height;
     private $weight;
+    private $hart;
 
-    public function __construct(string $name, int $height, int $weight) {
+    public function __construct(string $name, int $height, int $weight, Hart $hart) {
         $this->name = $name;
         $this->height = $height;
         $this->weight = $weight;
+        $this->hart = $hart;
     }
 
     public function getName() {
@@ -16,7 +19,7 @@ class Person {
     }
 
     public function setName(string $name) {
-        $clone = clone $this;
+        $clone = $this->getCloneInstance();
         $clone->name = $name;
         return $clone;
     }
@@ -26,8 +29,8 @@ class Person {
     }
 
     public function setHeight(int $height) {
-        $clone = clone $this;
-        $clone->name = $height;
+        $clone = $this->getCloneInstance();
+        $clone->height = $height;
         return $clone;
     }
 
@@ -36,8 +39,18 @@ class Person {
     }
 
     public function setWeight(int $weight) {
+        $clone = $this->getCloneInstance();
+        $clone->weight = $weight;
+        return $clone;
+    }
+
+    public function getHart() {
+        return $this->hart;
+    }
+
+    private function getCloneInstance() {
         $clone = clone $this;
-        $clone->name = $weight;
+        $clone->hart = clone $this->getHart();
         return $clone;
     }
 }
