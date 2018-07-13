@@ -2,3 +2,4 @@
 デザインパターンの勉強
 
 - Immutable Pattern
+- Iterator Pattern
