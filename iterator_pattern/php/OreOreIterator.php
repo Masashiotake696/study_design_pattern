@@ -3,7 +3,6 @@
 abstract class OreOreIterator {
     private $elements; // 繰り返し処理をする要素
     private $now = 0; // 現在処理を行っている要素
-    private $length; // 要素の個数
 
     public function __construct($value) {
         try {
@@ -21,13 +20,7 @@ abstract class OreOreIterator {
 
     // 次があるか
     public function hasNext() {
-        // 要素の個数がセットされていない場合はセット
-        if(!isset($this->length)) {
-            $this->length = count($this->elements);
-        }
-
-        // 次があるかを返す
-        if($this->now < $this->length) {
+        if(isset($this->elements[$this->now])) {
             return true;
         } else {
             return false;
