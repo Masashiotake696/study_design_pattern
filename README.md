@@ -3,3 +3,4 @@
 
 - Immutable Pattern
 - Iterator Pattern
+- Observer Pattern
