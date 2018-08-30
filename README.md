@@ -4,3 +4,4 @@
 - Immutable Pattern
 - Iterator Pattern
 - Observer Pattern
+- Facade Pattern
