@@ -1,11 +1,12 @@
 public abstract class CookCupNoodle {
     private String name;
+    private int time;
     public abstract void open();
-    public abstract void waiting();
     public abstract void close();
 
-    public CookCupNoodle(String name) {
+    public CookCupNoodle(String name, int time) {
         this.name = name;
+        this.time = time;
     }
 
     // template method
@@ -14,7 +15,7 @@ public abstract class CookCupNoodle {
         System.out.println("フタを開けるよ");
         open();
         System.out.println("お湯を注ぐよ");
-        waiting();
+        System.out.println(this.time + "分待つよ");
         close();
         System.out.println("完成!!!");
     }
