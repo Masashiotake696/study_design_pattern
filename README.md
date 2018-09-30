@@ -6,4 +6,4 @@
 - Observer Pattern
 - Facade Pattern
 - Factory Method Pattern
-- Template Method Patter
+- Template Method Pattern
