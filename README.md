@@ -5,3 +5,4 @@
 - Iterator Pattern
 - Observer Pattern
 - Facade Pattern
+- Factory Method Pattern
