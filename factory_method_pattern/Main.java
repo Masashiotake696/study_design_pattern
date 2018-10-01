@@ -2,6 +2,7 @@ public class Main {
     public static void main(String argv[]) {
         PanmanBody panman_body = new PanmanBody();
 
+        // TODO: setFaceとattackをまとめる
         BreadFace anpanman_face = (new AnpanmanFaceFactory()).create();
         panman_body.setFace(anpanman_face);
         panman_body.attack();

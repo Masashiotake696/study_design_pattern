@@ -4,10 +4,9 @@ public class CookKitsuneDonbei extends CookCupNoodle {
     }
 
     public void open() {
-        System.out.println("火薬を入れるよ");
+        System.out.println("加薬を入れるよ");
+        System.out.println("ふっくらおあげを入れるよ");
     }
 
-    public void close() {
-        System.out.println("サクサクの天ぷらを入れるよ");
-    }
+    public void close() {}
 }

@@ -12,6 +12,7 @@ public abstract class CookCupNoodle {
     // template method
     public final void cook() {
         System.out.println(this.name + "を作るよ!");
+        System.out.println("ビニールを取るよ");
         System.out.println("フタを開けるよ");
         open();
         System.out.println("お湯を注ぐよ");

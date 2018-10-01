@@ -4,9 +4,10 @@ public class CookTanukiDonbei extends CookCupNoodle {
     }
 
     public void open() {
-        System.out.println("火薬を入れるよ");
-        System.out.println("ふっくらおあげを入れるよ");
+        System.out.println("加薬を入れるよ");
     }
 
-    public void close() {}
+    public void close() {
+        System.out.println("サクサク天ぷらを入れるよ");
+    }
 }

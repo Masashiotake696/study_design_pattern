@@ -1,6 +1,7 @@
 public class PanmanBody {
     private String technique_name; // 技名
 
+    // TODO: 技名はpanman_faceに持たせる
     public void setFace(BreadFace bread_face) {
         switch(bread_face.getName()) {
             case "アンパンマン":
